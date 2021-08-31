@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 140vmin;
+            margin: 2rem;
+            text-align: center;
+        }
+        .box1 h1{
+            margin: 13px 0px;
+        }
+        .light{
+            font-weight: 300;
+        }
+        .box1{
+            width: 50vmin;
+            margin: auto;
+            margin-bottom: 3rem;
+        }
+        .box2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .b{
+            display: flex;
+        }
+        .b2{
+            display: flex;
+            flex-direction: column;
+        }
+        .card{
+            text-align: start;
+            border-radius: 9px;
+            padding: 30px;
+            margin: 10px;
+            box-shadow:2px 5px 11px rgb(33 33 33 / 40%);
+            background-color: rgb(243, 243, 243);
+        }
+        .card img{
+            margin-top: 30px;
+            float: right;
+            width: 70px;
+        }
+        footer{
+            margin-top: auto;
+            padding: 3px;
+            width: 100%;
+            background-color: rgb(221, 221, 221);
+            text-align: center;
+        }
+        @media screen  and (max-width:947px){
+            .card img{
+                margin-top: 10px;
+            }
+            .box2{
+                flex-direction: column;
+            }
+            .main{
+                height: auto;
+            }
+            .card{
+                width: 100%;
+            }
+            .b2{
+                flex-direction: row;
+            }
+            .b{
+                width: 100%;
+            }
+            .box1{
+                width: 65vmin;
+            }
+        }
+        @media screen  and (max-width:587px){
+            .card img{
+                width: 50px;
+            }
+            .card{
+                padding: 15px;
+            }
+        }
+        @media screen  and (max-width:473px){
+            .b2{
+                flex-direction: column;
+            }
+        }
+    </style>
+    <title>Featured Section</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="box1">
+                <h1 class="light">Reliable Efficient Delivery</h1>
+                <h1>Powered by technology</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis soluta ea molestiae eius expedita laboriosam neque necessitatibus adipisci incidunt fuga. Eos velit exercitationem id delectus maiores eligendi neque animi suscipit.</p>
+            </div>
+            <div class="box2">
+                <div class="b b1">
+                    <div class="card">
+                        <h4>Supervisor</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit assumenda ipsa asperiores.</p>
+                        <img src="manager.png" alt="">
+                    </div>
+                </div>
+                <div class="b b2">
+                    <div class="card">
+                        <h4>Team Builder</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium similique culpa quia.</p>
+                        <img src="company.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h4>Karma</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste eligendi delectus!</p>
+                        <img src="chakra.png" alt="">
+                    </div>
+                </div>
+                <div class="b b3">
+                    <div class="card">
+                        <h4>Calculator</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sed explicabo animi?</p>
+                        <img src="calculator.png" alt="">
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <footer>
+        <p>All copyright reserved</p>
+    </footer>
+</body>
+</html>
